@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #############################################
-##      Strayacoin Ubuntu Build script     ##
+##      arkos Ubuntu Build script     ##
 #############################################
 
 ## Let's set some variables:
 version="1.0.1"
 # This goes across to the mining scripts, too.
 # If you change it here, be sure to change it in the mining scripts, too!
-logfile=/var/log/strayacoin-mining.log
+logfile=/var/log/arkos-mining.log
 
 # Find the true path of the script.  This is important for the file lookups performed.
 # The explanation for this can be found here:  https://stackoverflow.com/a/246128/7831034
@@ -48,10 +48,10 @@ fi
 ## Ensure the user knows what's about to happen.
 
 echo "#############################################"
-echo "##  Strayacoin Ubuntu Build script v$version   ##"
+echo "##  arkos Ubuntu Build script v$version   ##"
 echo "#############################################"
 echo
-echo "This will compile and install the key-components of the Strayacoin Core, including a graphical wallet, and a mining script (should you choose to use that."
+echo "This will compile and install the key-components of the arkos Core, including a graphical wallet, and a mining script (should you choose to use that."
 echo "This will also install dependencies that are needed for this to work."
 echo "This will also ask you for your user password at least once.  This is to install the dependencies required."
 echo "This will take some time!!  Be patient"
@@ -150,9 +150,9 @@ echo "The install has been successful."
 echo
 echo "There are a couple of important steps to complete the installation, though, that this script cannot do."
 echo
-echo "run strayacoin-qt, accept the defaults, then close it"
-echo "run cp $DIR/strayacoin.conf ~/.strayacoin/"
-echo "restart strayacoin-qt and the wallet should eventually sync"
+echo "run arkos-qt, accept the defaults, then close it"
+echo "run cp $DIR/arkos.conf ~/.arkos/"
+echo "restart arkos-qt and the wallet should eventually sync"
 echo
-echo "If you wish to mine: after syncing, run mine-single or mine-multithreaded while the strayacoin-qt wallet is open to begin mining."
+echo "If you wish to mine: after syncing, run mine-single or mine-multithreaded while the arkos-qt wallet is open to begin mining."
 echo

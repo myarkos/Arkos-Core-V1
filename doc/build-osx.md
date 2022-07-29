@@ -24,17 +24,17 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Strayacoin Core
+Build arkos Core
 ------------------------
 
-1. Clone the strayacoin source code and cd into `StrayaCoin-Core`
+1. Clone the arkos source code and cd into `arkos-Core`
 
-        git clone https://github.com/StrayaCoin/StrayaCoin-Core
-        cd StrayaCoin-Core
+        git clone https://github.com/arkos/arkos-Core
+        cd arkos-Core
 
-2.  Build strayacoin-core:
+2.  Build arkos-core:
 
-    Configure and build the headless strayacoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless arkos binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -53,37 +53,37 @@ Build Strayacoin Core
 Running
 -------
 
-Strayacoin Core is now available at `./src/strayacoind`
+arkos Core is now available at `./src/arkosd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=strayacoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/strayacoin/strayacoin.conf"
+    echo -e "rpcuser=arkosrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/arkos/arkos.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/strayacoin/strayacoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/arkos/arkos.conf"
 
-The first time you run strayacoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run arkosd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/strayacoin/debug.log
+    tail -f $HOME/Library/Application\ Support/arkos/debug.log
 
 Other commands:
 -------
 
-    ./src/strayacoind -daemon # Starts the strayacoin daemon.
-    ./src/strayacoin-cli --help # Outputs a list of command-line options.
-    ./src/strayacoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/arkosd -daemon # Starts the arkos daemon.
+    ./src/arkos-cli --help # Outputs a list of command-line options.
+    ./src/arkos-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for strayacoin development.
+You can use Qt Creator as an IDE, for arkos development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "strayacoin-qt" as project name, enter src/qt as location
+4. Enter "arkos-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

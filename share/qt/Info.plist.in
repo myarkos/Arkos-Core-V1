@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>strayacoin-Qt</string>
+  <string>arkos-Qt</string>
   
   <key>CFBundleName</key>
-  <string>strayacoin-Qt</string>
+  <string>arkos-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.strayacoin.strayacoin-Qt</string>
+  <string>org.arkos.arkos-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.strayacoin.strayacoinPayment</string>
+      <string>org.arkos.arkosPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>strayacoin</string>
+        <string>arkos</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.strayacoin.paymentrequest</string>
+      <string>org.arkos.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>strayacoin payment request</string>
+      <string>arkos payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-strayacoin-payment-request</string>
+        <string>application/x-arkos-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>strayacoinpaymentrequest</string>
+          <string>arkospaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.strayacoin.paymentrequest</string>
+        <string>org.arkos.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

@@ -1,41 +1,41 @@
-Strayacoin Core
+arkos Core
 =============
 
 Setup
 ---------------------
-Strayacoin Core is the original strayacoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of strayacoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+arkos Core is the original arkos client and it builds the backbone of the network. It downloads and, by default, stores the entire history of arkos transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Strayacoin Core, visit [strayacoin.org](https://www.strayacoin.org/).
+To download arkos Core, visit [arkos.org](https://www.arkos.org/).
 
 Running
 ---------------------
-The following are some helpful notes on how to run strayacoin on your native platform.
+The following are some helpful notes on how to run arkos on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/strayacoin-qt` (GUI) or
-- `bin/strayacoind` (headless)
+- `bin/arkos-qt` (GUI) or
+- `bin/arkosd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run strayacoin-qt.exe.
+Unpack the files into a directory, and then run arkos-qt.exe.
 
 ### OS X
 
-Drag strayacoin-Core to your applications folder, and then run strayacoin-Core.
+Drag arkos-Core to your applications folder, and then run arkos-Core.
 
 ### Need Help?
 
-* See the documentation at the [strayacoin Wiki](https://strayacoin.info/)
+* See the documentation at the [arkos Wiki](https://arkos.info/)
 for help and more information.
-* Ask for help on [#strayacoin](http://webchat.freenode.net?channels=strayacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=strayacoin).
-* Ask for help on the [strayacoinTalk](https://strayacointalk.io/) forums.
+* Ask for help on [#arkos](http://webchat.freenode.net?channels=arkos) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=arkos).
+* Ask for help on the [arkosTalk](https://arkostalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build strayacoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build arkos on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build strayacoin on your native plat
 
 Development
 ---------------------
-The strayacoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The arkos repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/strayacoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/arkos/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The strayacoin repo's [root README](/README.md) contains relevant information on
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [strayacoinTalk](https://strayacointalk.io/) forums.
-* Discuss general strayacoin development on #strayacoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=strayacoin-dev).
+* Discuss on the [arkosTalk](https://arkostalk.io/) forums.
+* Discuss general arkos development on #arkos-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=arkos-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

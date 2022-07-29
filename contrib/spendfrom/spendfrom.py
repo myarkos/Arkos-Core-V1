@@ -36,15 +36,15 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the strayacoin data directory"""
+    """Return the default location of the arkos data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/strayacoin/")
+        return os.path.expanduser("~/Library/Application Support/arkos/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "strayacoin")
-    return os.path.expanduser("~/.strayacoin")
+        return os.path.join(os.environ['APPDATA'], "arkos")
+    return os.path.expanduser("~/.arkos")
 
 def read_bitcoin_config(dbdir):
-    """Read the strayacoin.conf file from dbdir, returns dictionary of settings"""
+    """Read the arkos.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -62,11 +62,11 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "strayacoin.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "arkos.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a strayacoin JSON-RPC server"""
+    """Connect to a arkos JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -224,15 +224,15 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get strayacoins from")
+                      help="addresses to get arkoss from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send strayacoins to")
+                      help="address to get send arkoss to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of strayacoin.conf file with RPC username/password (default: %default)")
+                      help="location of arkos.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",

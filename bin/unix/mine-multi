@@ -4,12 +4,12 @@
 
 #!/bin/bash
 pid=$$
-logfile=/var/log/strayacoin-mining.log
+logfile=/var/log/arkos-mining.log
 version_number="1.0.0"
 
 print-help(){
   echo
-  echo "Strayacoin Multi-Thread Miner Script Version $version_number"
+  echo "arkos Multi-Thread Miner Script Version $version_number"
   echo
   echo "Usage: mine-multi [-i <instances> -q -n]"
   echo

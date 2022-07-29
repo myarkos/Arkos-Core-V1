@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>strayacoin</source>
-        <translation>strayacoin</translation>
+        <source>arkos</source>
+        <translation>arkos</translation>
     </message>
     <message>
         <source>Wallet</source>

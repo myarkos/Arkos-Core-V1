@@ -1,5 +1,5 @@
 ---
-name: "strayacoin-dmg-signer"
+name: "arkos-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -10,7 +10,7 @@ remotes:
 - "url": "https://github.com/47crypto/straya-coin-detached-sigs.git"
   "dir": "signature"
 files:
-- "strayacoin-osx-unsigned.tar.gz"
+- "arkos-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=strayacoin-osx-unsigned.tar.gz
-  SIGNED=strayacoin-osx-signed.dmg
+  UNSIGNED=arkos-osx-unsigned.tar.gz
+  SIGNED=arkos-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
