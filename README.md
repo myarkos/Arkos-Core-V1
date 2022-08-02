@@ -1,9 +1,7 @@
 Arkos Core integration/staging tree
 =====================================
 
-<center>
 ![image](https://i.postimg.cc/Z5KGcMZJ/logo-png.png)
-</center>
 
 https://www.myarkos.com/
 
