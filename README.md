@@ -1,4 +1,4 @@
-Arkos Core integration/staging tree
+Arkos Core
 =====================================
 
 ![image](https://i.postimg.cc/Z5KGcMZJ/logo-png.png)
