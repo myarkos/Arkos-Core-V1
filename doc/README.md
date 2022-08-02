@@ -3,7 +3,7 @@ Arkos Core
 
 Setup
 ---------------------
-arkos Core is the original arkos client and it builds the backbone of the network. It downloads and, by default, stores the entire history of arkos transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Arkos Core is the original arkos client and it builds the backbone of the network. It downloads and, by default, stores the entire history of arkos transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 To download arkos Core, visit [myarkos.com](https://www.myarkos.com/).
 
@@ -28,7 +28,7 @@ Drag arkos-Core to your applications folder, and then run arkos-Core.
 
 ### Need Help?
 
-* See the documentation at the [arkos Wiki](https://arkos.info/)
+* See the documentation at the [Arkos Wiki](https://myarkos.com/)
 for help and more information.
 * Ask for help on [#arkos](http://webchat.freenode.net?channels=arkos) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=arkos).
 * Ask for help on the [arkosTalk](https://arkostalk.io/) forums.
